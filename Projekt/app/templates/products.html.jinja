@@ -1,0 +1,12 @@
+{% extends "base.html.jinja" %}
+{% block content %}
+    <h2>List of products:</h2>
+    <ul class="list-group w-50">
+    {% for product in products %}
+        <li class="list-group-item"><a href="{{url_for('product', product_id=product)}}">Product : {{product}}</a></li>
+
+    {% endfor %}
+    </ul>
+{% endblock content %}
+
+

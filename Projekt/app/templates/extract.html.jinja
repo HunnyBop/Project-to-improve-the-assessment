@@ -1,0 +1,23 @@
+{% extends "base.html.jinja" %}
+{% block content %}
+
+<div class = "content"  style="background:#dedede">
+    <div class = "home-container">
+        <div class = "home-container-title">Enter Product ID:</div>
+            <form action="{{url_for('opinions')}}" method="POST">
+                <div class="row">
+                    <div class="col-auto">
+                        <label for="product_id" class="form-label">Product ID:</label>
+                    </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="product_id" name="product_id">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-danger">Extract</button>
+                </div>
+            </div>
+        </form>
+        <div class = 'text-danger fw-bold'>{{error}}</div>
+    </div>
+</div>
+{% endblock content %}

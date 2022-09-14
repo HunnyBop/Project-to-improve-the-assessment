@@ -1,0 +1,26 @@
+{% extends "base.html.jinja" %}
+{% block content %}
+    <head>
+        <title>Author</title>
+    </head>
+    
+
+    <div class = "content"  style="background:#dedede">
+    <div class = "home-container w-100">
+        <div class = "home-container-title">About me</div>
+        <div class="d-flex justify-content-between">
+            <div>
+                <div class = "home-container-desc h3"> Created and designed by Dawid Burgiel </div>
+                <div class = 'list-group'>
+                    <li class="list-group-item list-group-item-primary">Age: 19</li>
+                    <li class="list-group-item list-group-item-primary">Height: 190</li>
+                    <li class="list-group-item list-group-item-primary">Languages: English, Spanish, Polish</li>
+                    <li class="list-group-item list-group-item-primary">Programming Languages: Python, C++, C#, JS, CSS, HTML</li>
+                </div>
+            </div>
+            <div class="border border-2 border-primary rounded" ><img src="/static/author.jpg" width="210" height="400"  alt="Dawid Burgiel"> </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock content %}
